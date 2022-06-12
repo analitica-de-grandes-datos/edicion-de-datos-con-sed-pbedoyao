@@ -52,4 +52,5 @@ sed 's/;\\N;$/;\\N;\\N/g' data7.csv > data8.csv
 sed 's/n/N/g;' data8.csv > data9.csv
 sed 's/;N$/;\\N/g' data9.csv > data10.csv
 sed 's/,/./g;' data10.csv > data11.csv
-sed 's/;/,/g;' data11.csv > output.csv
+sed 's/;/,/g;' data11.csv > data12.csv
+sed 's/[a-z]/\U&/g' data12.csv > output.csv
